@@ -14,8 +14,12 @@ NC='\033[0m' # No Color
 # 프로젝트 루트로 이동
 cd "$(dirname "$0")/.."
 
+# 현재 브랜치 확인
+CURRENT_BRANCH=$(git branch --show-current)
+
 echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "${BLUE}🔄 Git 자동 커밋 시작${NC}"
+echo -e "${BLUE}📍 현재 브랜치: ${CURRENT_BRANCH}${NC}"
 echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 
 # Git 상태 확인
