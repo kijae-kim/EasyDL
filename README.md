@@ -64,22 +64,68 @@ EasyDL/
 
 ## 🛠️ 기술 스택
 
-- **언어**: Python 3.x
-- **프레임워크**: TensorFlow, PyTorch
+- **언어**: Python 3.12.5
+- **프레임워크**: TensorFlow 2.20.0, PyTorch 2.9.1
 - **노트**: Obsidian (마크다운)
-- **버전 관리**: Git/GitHub
-- **블로그**: 티스토리 (자동 포스팅)
+- **버전 관리**: Git/GitHub (자동 커밋)
+- **AI 도우미**: Claude Code (VSCode 통합)
+- **블로그**: 티스토리 (수동 포스팅)
 
 ---
 
 ## 🎯 학습 방법
 
 1. 📹 강의 시청 및 교재 학습
-2. 💻 VSCode에서 코드 구현
-3. 🤖 Claude와 대화하며 이해도 증진
-4. 📝 Obsidian에 학습 노트 작성
-5. 🔄 Git Commit & Push
-6. 📤 티스토리 자동 포스팅
+2. 📝 Obsidian에 학습 노트 작성
+3. 💻 VSCode + Claude Code로 코드 구현
+4. 🤖 Claude와 대화하며 이해도 증진
+5. 🔄 **자동 Git Commit & Push** (10분마다)
+6. 📤 주간 단위로 티스토리 포스팅
+
+---
+
+## ⚡ 빠른 시작
+
+### 1. 가상환경 활성화
+```bash
+cd /Users/gimgijae/Desktop/Paper/EasyDL
+source activate_env.sh
+```
+
+### 2. Obsidian Vault 연결
+- Obsidian 실행 → "Open folder as vault"
+- `/Users/gimgijae/Desktop/Paper/EasyDL` 선택
+
+### 3. GitHub 연결
+```bash
+./scripts/setup_github.sh
+```
+
+### 4. Obsidian Git 플러그인 설치
+- `Settings` → `Community plugins` → "Git" 검색
+- 자동 커밋 간격: 10분
+
+**자세한 가이드**: [빠른_시작.md](00_학습_가이드/빠른_시작.md)
+
+---
+
+## 🔄 자동화 기능
+
+### Git 자동 커밋
+- ✅ **Obsidian Git 플러그인**: 10분마다 자동 커밋/푸시
+- ✅ **수동 스크립트**: `./scripts/auto_commit.sh`
+- ✅ **변경사항 추적**: 노트/코드/자료 자동 분류
+
+### 학습 워크플로우
+```
+Obsidian 노트 작성
+   ↓ (자동)
+Git 커밋 (10분마다)
+   ↓ (자동)
+GitHub 푸시
+   ↓ (완료)
+학습 기록 백업 완료!
+```
 
 ---
 
