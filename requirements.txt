@@ -1,0 +1,25 @@
+# 딥러닝 프레임워크
+tensorflow>=2.13.0
+torch>=2.0.0
+torchvision>=0.15.0
+
+# 데이터 처리
+numpy>=1.24.0
+pandas>=2.0.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Jupyter
+jupyter>=1.0.0
+ipykernel>=6.23.0
+
+# 마크다운 처리
+markdown>=3.4.0
+python-frontmatter>=1.0.0
+
+# 웹 요청 (티스토리 API)
+requests>=2.31.0
+
+# 유틸리티
+python-dotenv>=1.0.0
+pyyaml>=6.0
