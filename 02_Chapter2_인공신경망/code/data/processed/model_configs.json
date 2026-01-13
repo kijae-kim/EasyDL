@@ -1,0 +1,46 @@
+{
+  "linear_regression": {
+    "model_type": "LinearRegression",
+    "params": {
+      "fit_intercept": true
+    },
+    "task": "regression",
+    "target": "target_return"
+  },
+  "logistic_regression": {
+    "model_type": "LogisticRegression",
+    "params": {
+      "penalty": "l2",
+      "C": 1.0,
+      "solver": "lbfgs",
+      "max_iter": 1000,
+      "random_state": 42
+    },
+    "task": "classification",
+    "target": "target"
+  },
+  "mlp": {
+    "model_type": "MLP",
+    "architecture": {
+      "input_dim": 24,
+      "hidden_layers": [
+        32,
+        16
+      ],
+      "output_dim": 1,
+      "activation": "relu",
+      "output_activation": "sigmoid",
+      "dropout": 0.3
+    },
+    "training": {
+      "optimizer": "adam",
+      "learning_rate": 0.001,
+      "loss": "binary_crossentropy",
+      "batch_size": 32,
+      "epochs": 100,
+      "validation_split": 0.2
+    },
+    "task": "classification",
+    "target": "target"
+  }
+}
