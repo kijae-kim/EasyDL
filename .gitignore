@@ -1,75 +1,31 @@
-# Python
+# Python 가상환경
+EasyDL/
+venv/
+env/
+.venv/
+
+# Python 캐시
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
-.Python
-env/
-venv/
-ENV/
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
+
+# 데이터 파일
+*.csv
+*.pkl
+*.h5
+*.keras
 
 # Jupyter Notebook
 .ipynb_checkpoints
-*.ipynb_checkpoints/
 
-# PyCharm
-.idea/
-
-# VSCode
+# IDE
 .vscode/
-*.code-workspace
+.idea/
 
 # macOS
 .DS_Store
-.AppleDouble
-.LSOverride
 
-# Obsidian
-.obsidian/workspace*
-.obsidian/workspace.json
-.trash/
-
-# 환경 변수
-.env
-.env.local
-
-# 개인 노트 (공개하지 않을 경우)
-# private/
-
-# 대용량 데이터셋
-datasets/
-*.csv
-*.h5
-*.hdf5
-*.pkl
-*.pickle
-
-# 모델 체크포인트
-checkpoints/
-models/
-*.pth
-*.h5
-*.ckpt
-
-# 로그 파일
-logs/
+# 임시 파일
+*.tmp
 *.log
-
-# 티스토리 API 키
-tistory_config.json
-scripts/config.json
