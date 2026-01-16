@@ -15,6 +15,7 @@ __pycache__/
 *.pkl
 *.h5
 *.keras
+/notes
 
 # Jupyter Notebook
 .ipynb_checkpoints
