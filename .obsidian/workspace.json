@@ -107,8 +107,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "896144deb4f86caf",
@@ -228,6 +227,7 @@
   },
   "active": "6919f39ddc7623e4",
   "lastOpenFiles": [
+    "02_Chapter2_인공신경망/notes/Adam_논문_요약.md",
     "스크린샷 2026-01-20 오후 6.47.42.png",
     "02_Chapter2_인공신경망/notes/인공신경망.md",
     "02_Chapter2_인공신경망/notes/선형회귀.md",
@@ -255,7 +255,6 @@
     "02_Chapter2_인공신경망/code/data/processed/analysis_report.md",
     "02_Chapter2_인공신경망/assets/time_series_patterns.png",
     "02_Chapter2_인공신경망/assets/feature_importance.png",
-    "02_Chapter2_인공신경망/assets/feature_distributions.png",
     "02_Chapter2_인공신경망/code/analyze_data.py",
     "02_Chapter2_인공신경망/code/data/processed/preprocessing_report.md",
     "02_Chapter2_인공신경망/code/data/processed/feature_list.txt",
