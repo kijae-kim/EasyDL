@@ -6,15 +6,22 @@ SGD, Momentum, RMSProp, Adam의 수렴 과정을 시각화하여 비교합니다
 
 실행 방법:
     source activate_env.sh
-    python 02_Chapter2_인공신경망/code/optimizer_comparison.py
+    python optimizer_comparison.py
 """
 
 import numpy as np
+import matplotlib
+matplotlib.use('Agg')  # GUI 없이 이미지 저장만
 import matplotlib.pyplot as plt
 from matplotlib.colors import LogNorm
 import matplotlib.animation as animation
 from typing import Callable, Tuple, List, Dict
 import os
+from pathlib import Path
+
+# 스크립트 위치 기준 경로 설정
+SCRIPT_DIR = Path(__file__).parent
+ASSETS_DIR = SCRIPT_DIR.parent / "assets"
 
 # 한글 폰트 설정 (macOS)
 plt.rcParams['font.family'] = 'AppleGothic'
@@ -279,7 +286,7 @@ def plot_optimization_paths(histories: Dict[str, Dict],
         plt.savefig(save_path, dpi=150, bbox_inches='tight')
         print(f"그래프 저장: {save_path}")
 
-    plt.show()
+    plt.close()
 
 
 def create_animation(histories: Dict[str, Dict],
@@ -346,7 +353,7 @@ def create_animation(histories: Dict[str, Dict],
         anim.save(save_path, writer='pillow', fps=20)
         print(f"애니메이션 저장: {save_path}")
 
-    plt.show()
+    plt.close()
     return anim
 
 
@@ -391,8 +398,7 @@ def run_quadratic_experiment():
     print()
 
     # 시각화
-    assets_dir = "02_Chapter2_인공신경망/assets"
-    os.makedirs(assets_dir, exist_ok=True)
+    ASSETS_DIR.mkdir(parents=True, exist_ok=True)
 
     plot_optimization_paths(
         histories,
@@ -400,7 +406,7 @@ def run_quadratic_experiment():
         title="타원형 2차 함수에서의 최적화 알고리즘 비교",
         xlim=(-5, 5),
         ylim=(-4, 4),
-        save_path=os.path.join(assets_dir, "optimizer_comparison_quadratic.png")
+        save_path=str(ASSETS_DIR / "optimizer_comparison_quadratic.png")
     )
 
     return histories
@@ -443,8 +449,7 @@ def run_beale_experiment():
     print()
 
     # 시각화
-    assets_dir = "02_Chapter2_인공신경망/assets"
-    os.makedirs(assets_dir, exist_ok=True)
+    ASSETS_DIR.mkdir(parents=True, exist_ok=True)
 
     plot_optimization_paths(
         histories,
@@ -452,7 +457,7 @@ def run_beale_experiment():
         title="Beale 함수에서의 최적화 알고리즘 비교",
         xlim=(-4.5, 4.5),
         ylim=(-3, 3),
-        save_path=os.path.join(assets_dir, "optimizer_comparison_beale.png")
+        save_path=str(ASSETS_DIR / "optimizer_comparison_beale.png")
     )
 
     return histories
@@ -497,4 +502,4 @@ if __name__ == "__main__":
     # 결과 요약
     print_summary()
 
-    print("\n그래프가 02_Chapter2_인공신경망/assets/ 폴더에 저장되었습니다.")
+    print(f"\n그래프가 {ASSETS_DIR}/ 폴더에 저장되었습니다.")
