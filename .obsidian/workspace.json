@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_Chapter2_인공신경망/notes/선형회귀.md",
+                "file": "02_Chapter2_인공신경망/notes/Adam_논문_요약.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "선형회귀"
+              "title": "Adam_논문_요약"
             }
           }
         ],
@@ -107,7 +107,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "896144deb4f86caf",
@@ -227,12 +228,14 @@
   },
   "active": "6919f39ddc7623e4",
   "lastOpenFiles": [
+    "02_Chapter2_인공신경망/notes/최적화_알고리즘_비교_실습.md",
+    "02_Chapter2_인공신경망/assets/optimizer_comparison_beale.png",
+    "02_Chapter2_인공신경망/notes/선형회귀.md",
     "02_Chapter2_인공신경망/assets/optimizer_comparison_quadratic.png",
     "02_Chapter2_인공신경망/code/optimizer_comparison.py",
     "02_Chapter2_인공신경망/notes/Adam_논문_요약.md",
     "스크린샷 2026-01-20 오후 6.47.42.png",
     "02_Chapter2_인공신경망/notes/인공신경망.md",
-    "02_Chapter2_인공신경망/notes/선형회귀.md",
     "02_Chapter2_인공신경망/assets/improvement_scenarios.png",
     "02_Chapter2_인공신경망/assets/feature_analysis_scatter.png",
     "02_Chapter2_인공신경망/assets/improvement_roadmap.png",
@@ -255,8 +258,6 @@
     "02_Chapter2_인공신경망/assets/model_architectures.png",
     "02_Chapter2_인공신경망/code/03_model_design.py",
     "02_Chapter2_인공신경망/code/data/processed/analysis_report.md",
-    "02_Chapter2_인공신경망/assets/time_series_patterns.png",
-    "02_Chapter2_인공신경망/assets/feature_importance.png",
     "02_Chapter2_인공신경망/code/analyze_data.py",
     "02_Chapter2_인공신경망/code/data/processed/preprocessing_report.md",
     "EasyDL/lib/python3.12/site-packages/sklearn/externals/array_api_extra/README.md",
