@@ -213,6 +213,7 @@
   },
   "active": "86c993bacaacc436",
   "lastOpenFiles": [
+    "03_Chapter3_Gradient_Descent_최적화/code/backpropagation_visualization.py",
     "02_Chapter2_인공신경망/notes/Adam_논문_요약.md",
     "03_Chapter3_Gradient_Descent_최적화/notes/역전파.md",
     "02_Chapter2_인공신경망/notes/최적화_알고리즘_비교_실습.md",
@@ -257,7 +258,6 @@
     "02_Chapter2_인공신경망/code/Simple_Kospi_기획서.md",
     "04_Chapter4_이진분류와_다중분류/notes/Sigmoid.md",
     "06_Chapter6_딥러닝_문제와_해결방안/notes/Chapter 6.md",
-    "05_Chapter5_Universal_Approximation_Theorem/notes/5.1 Universal Approximation Theorem.md",
-    "00_학습_가이드/완벽한_학습_워크플로우.md"
+    "05_Chapter5_Universal_Approximation_Theorem/notes/5.1 Universal Approximation Theorem.md"
   ]
 }
