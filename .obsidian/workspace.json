@@ -34,9 +34,21 @@
               "icon": "lucide-file",
               "title": "역전파"
             }
+          },
+          {
+            "id": "7a6ba68d1d65d8a1",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.5"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.11.5"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -211,7 +223,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "86c993bacaacc436",
+  "active": "7a6ba68d1d65d8a1",
   "lastOpenFiles": [
     "03_Chapter3_Gradient_Descent_최적화/code/README.md",
     "03_Chapter3_Gradient_Descent_최적화/code/backpropagation_visualization.py",
